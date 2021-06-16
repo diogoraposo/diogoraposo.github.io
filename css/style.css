@@ -30,7 +30,7 @@ body {
 
 @media screen and (min-width: 769px) {
     body {
-        background: url(../images/banner.png) no-repeat center center fixed;
+        background: url(../images/banner3.png) no-repeat left top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -41,7 +41,7 @@ body {
 @media screen and (max-width: 768px) {
     /* start of medium tablet styles */
     body {
-        background: url(../images/banner_tablet.png) no-repeat center center fixed;
+        background: url(../images/banner_tablet.png) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -51,7 +51,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        background: url(../images/banner_mobile.png) no-repeat center center fixed;
+        background: url(../images/banner_mobile.png) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -199,11 +199,16 @@ button {
 
 .logo p{
     color: black;
-    
     font-weight: 400;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 3000px) {
+    .logo p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 2999px) {
     .logo p {
         font-size: 4vw;
     }
@@ -367,6 +372,10 @@ button {
     text-align: center;
 }
 
+.footer .contact a {
+    color: #fff;
+}
+
 @media screen and (min-width: 601px) {
     .footer .contact {
         font-size: 40px;
@@ -409,7 +418,7 @@ ul.social_link li a {
     display: flex;
     align-items: center;
     width: 40px;
-    height: 41px;
+    height: 40px;
     justify-content: center;
 }
 
@@ -427,6 +436,19 @@ ul.contact_link li a p {
     width: 100%;
     font-size: 200%;
     text-align: right;
+}
+
+@media screen and (min-width: 3440px) {
+    /* start of medium tablet styles */
+    ul.social_link li a {
+        width: 70px;
+        height: 70px;
+        font-size: 37px;
+    }
+
+    ul.contact_link li a p {
+        font-size: 300%;
+    }
 }
 
 /** end footer **/
