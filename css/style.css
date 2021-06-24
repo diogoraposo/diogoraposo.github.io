@@ -29,7 +29,7 @@ body {
 
 @media screen and (min-width: 769px) {
     body {
-        background: url(../images/banner3.png) no-repeat left top fixed;
+        background: url(https://musicbybrisa.com/images/banner3.png) no-repeat left top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -40,7 +40,7 @@ body {
 @media screen and (max-width: 768px) {
     /* start of medium tablet styles */
     body {
-        background: url(../images/banner_tablet.png) no-repeat center top fixed;
+        background: url(https://musicbybrisa.com/images/banner_tablet.png) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -50,7 +50,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        background: url(../images/banner_mobile.png) no-repeat center top fixed;
+        background: url(https://musicbybrisa.com/images/banner_mobile.png) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -480,18 +480,22 @@ ul.contact_link li a p {
     }
 }
 
-.lang-menu .selected-lang {
+.lang-menu .selected-lang:before {
     display: flex;
     justify-content: space-between;
-}
-
-.lang-menu .selected-lang:before {
     content: '';
     width: 32px;
     height: 32px;
-    background-image: url(https://www.countryflags.io/pt/flat/32.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.lang-menu .selected-lang-pt:before {
+    background-image: url(https://www.countryflags.io/pt/flat/32.png);
+}
+
+.lang-menu .selected-lang-en:before {
+    background-image: url(https://www.countryflags.io/gb/flat/32.png);
 }
 
 .lang-menu ul {
