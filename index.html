@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
-  <title>Brisa | Official site</title>
+  <title>Brisa | Site oficial</title>
   <meta name="keywords"
     content="brisa musica portuguesa music portuguese portugal nuvem loop outro mar callme naoeemvao">
-  <meta name="description" content="Official Brisa website home. Nuvem OUT NOW! Connect with Brisa.">
+  <meta name="description" content="Site oficial da Brisa. Nuvem AGORA DISPONIVEL! Conecta-te a Brisa.">
   <meta name="author" content="brisa@musicbybrisa.com">
   <!-- ogp -->
   <meta property="og:title" content="Brisa | Official site" />
@@ -23,13 +23,13 @@
   <!-- favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- style css -->
+  <link rel="stylesheet" href="https://musicbybrisa.com/css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive-->
   <link rel="stylesheet" href="css/responsive.css">
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <!-- Tweaks for older IEs-->
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
@@ -38,7 +38,27 @@
 <!-- body -->
 
 <body>
+  <!-- Javascript files-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://musicbybrisa.com/js/brisa.js"></script>
+  <script src="js/brisa.js"></script>
   <!-- header -->
+  <div class="lang-menu">
+    <div class="selected-lang" onclick="myLangSelect()">
+    </div>
+    <ul id="lang-select">
+      <li>
+        <a href="index.html" class="pt"></a>
+      </li>
+      <li>
+        <a href="en/index.html" class="en"></a>
+      </li>
+    </ul>
+  </div>
   <header>
     <!-- header inner -->
     <div class="header-top">
@@ -76,9 +96,11 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block align-self-center">
               <ul class="contact_link">
-                <li><a href="#footer">
-                    <p>Contact</p>
-                  </a></li>
+                <li>
+                  <a href="#footer">
+                    <p id="contact">Contacto</p>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -133,16 +155,17 @@
         <div class="row display_boxflex">
           <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
             <div class="about-box">
-              <h2>About Brisa</h2>
+              <h2 id="about_title">Sobre Brisa</h2>
               <div>
-                <p>Brisa is a portuguese singer and songwriter wishing to bring a feeling of lightness and a pleasant
-                  and sunny rest. It’s truly the dream that characterizes her path, standing out by the capability of
-                  spreading her message genuinely and with the will to break the routine, bringing a fresh breeze mixed
-                  with an adrenaline boost to your day to day life.
-                  In highlights, “Loop” is part of the Antena 3’s radio playlist and the most recent single “Nuvem” got
-                  her a spot on the Spotify playlists Pop PT and EQUAL Portugal.
-                  Always available to talk and very sociable, nothing brightens her day like a message from her
-                  listeners.
+                <p id="about_content">Brisa é uma cantora e compositora Portuguesa que deseja levar um sentimento de
+                  leveza e de um agradável e solarengo descanso. É mesmo o sonho que caracteriza o seu percurso e
+                  destaca-se pela capacidade de passar as suas mensagens com genuinidade e vontade de quebrar a rotina,
+                  trazendo uma lufada de ar fresco misturada com uma injecção de adrenalina ao seu dia-a-dia.
+                  Em destaque, “Loop” faz parte da lista de reprodução da Antena 3 e o mais recente single “Nuvem” -
+                  considerado pelo Espalha Factos “(...) uma das canções pop nacionais mais conseguidas do ano.” -
+                  conquistou um lugar nas listas de reprodução do Spotify Pop PT e EQUAL Portugal.
+                  Sempre disponível para conversar e dada às relações sociais, nada alegra o seu dia como uma mensagem
+                  dos seus ouvintes.
                 </p>
               </div>
             </div>
@@ -161,7 +184,6 @@
   <div>
     <div class="container justify-content-center">
       <div class="row">
-
       </div>
     </div>
   </div>
@@ -208,11 +230,6 @@
     </div>
   </footr>
   <!-- end footer -->
-  <!-- Javascript files-->
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
 </body>
 
 </html>

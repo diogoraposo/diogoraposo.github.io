@@ -4,11 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(jquery-ui.css);
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -194,10 +193,9 @@ button {
 .logo {
     float: left;
     padding-bottom: 6px;
-    
 }
 
-.logo p{
+.logo p {
     color: black;
     font-weight: 400;
 }
@@ -311,7 +309,7 @@ button {
 .about .about-box h2 {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
     color: #ffffff;
     line-height: 70px;
     font-size: 4vw;
@@ -426,16 +424,29 @@ ul.social_link li a:hover {
     color: #fff;
 }
 
+ul.contact_link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.contact_link li {
+    display: inline-block;
+    padding-right: 4px;
+    margin: 0px 4px;
+}
+
 ul.contact_link li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    height: 40px;
 }
 
 ul.contact_link li a p {
     width: 100%;
-    font-size: 200%;
-    text-align: right;
+    font-size: 160%;
 }
 
 @media screen and (min-width: 3440px) {
@@ -445,7 +456,6 @@ ul.contact_link li a p {
         height: 70px;
         font-size: 37px;
     }
-
     ul.contact_link li a p {
         font-size: 300%;
     }
@@ -453,4 +463,76 @@ ul.contact_link li a p {
 
 /** end footer **/
 
-/*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- end page css ---------------------------------------------------------------------*/
+
+.lang-menu {
+    width: auto;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    z-index: 3;
+}
+
+@media (orientation:portrait) and (min-width: 765px) {
+    .lang-menu {
+        top: 1%;
+        right: 1%;
+    }
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu .selected-lang:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/pt/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    z-index: 3;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: auto;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/gb/flat/32.png);
+}
+
+.pt:before {
+    background-image: url(https://www.countryflags.io/pt/flat/32.png);
+}
