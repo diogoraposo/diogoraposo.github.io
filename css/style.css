@@ -380,9 +380,21 @@ button {
     }
 }
 
+@media screen and (min-width: 601px) {
+    .footer .contact-margin {
+        margin-top: 55px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .footer .contact {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer .contact-margin {
+        margin-top: 15px;
     }
 }
 
@@ -400,6 +412,7 @@ ul.social_link {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 ul.social_link li {
