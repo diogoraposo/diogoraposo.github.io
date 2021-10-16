@@ -198,6 +198,11 @@ button {
 .logo p {
     color: black;
     font-weight: 400;
+    text-shadow:
+    -1px -1px 0 #edcec3,  
+     1px -1px 0 #edcec3,
+    -1px  1px 0 #edcec3,
+     1px  1px 0 #edcec3; 
 }
 
 @media screen and (min-width: 3000px) {
