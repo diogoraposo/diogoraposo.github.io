@@ -1,5 +1,7 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 
+/*tuff color: #E8465D*/
+
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
@@ -557,4 +559,24 @@ ul.contact_link li a p {
 
 .pt:before {
     background-image: url(https://www.countryflags.io/pt/flat/32.png);
+}
+
+.tuff{
+    background-color: #E8465D;
+    position: fixed;
+    top: 10%;
+    right: 0%;
+    width: 8%;
+    text-align: center;
+}
+
+.tuff a img{
+    max-height:100%;
+    max-width:100%;
+}
+
+@media (orientation:portrait) and (min-width: 765px) {
+    .tuff {
+        top: 5%;
+    }
 }
