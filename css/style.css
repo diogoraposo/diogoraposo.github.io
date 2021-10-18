@@ -568,6 +568,7 @@ ul.contact_link li a p {
 }
 
 .tuff{background-color: #E8465D;
+    display: none;
     position: fixed;
     top: 10%;
     right: 0%;
