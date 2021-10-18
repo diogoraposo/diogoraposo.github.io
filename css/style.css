@@ -562,6 +562,7 @@ ul.contact_link li a p {
 }
 
 .tuff{
+    display: none;
     background-color: #E8465D;
     position: fixed;
     top: 10%;
