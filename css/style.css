@@ -42,7 +42,7 @@ body {
 @media screen and (max-width: 768px) {
     /* start of medium tablet styles */
     body {
-        background: url(../images/obanner_tablet.png) no-repeat center top fixed;
+        background: url(../images/obanner_tablet.jpeg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -52,7 +52,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        background: url(../images/obanner_mobile.png) no-repeat center top fixed;
+        background: url(../images/obanner_mobile.jpeg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
