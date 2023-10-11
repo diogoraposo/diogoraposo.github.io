@@ -31,7 +31,7 @@ body {
 
 @media screen and (min-width: 769px) {
     body {
-        background: url(../images/foto_sitebrisa_900x1600.jpg) no-repeat left top fixed;
+        background: url(../images/foto_sitebrisa_3000x1875.jpg) no-repeat left top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -52,7 +52,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        background: url(../images/foto_sitebrisa_3000x1875.jpg) no-repeat center top fixed;
+        background: url(../images/foto_sitebrisa_900x1600.jpg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
