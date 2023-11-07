@@ -29,7 +29,7 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 779px) {
     body {
         background: url(../images/foto_sitebrisa_3000x1875.jpg) no-repeat left top fixed;
         -webkit-background-size: cover;
@@ -39,7 +39,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 778px) {
     /* start of medium tablet styles */
     body {
         background: url(../images/foto_sitebrisa_1024x1366.jpg) no-repeat center top fixed;
