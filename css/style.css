@@ -292,6 +292,10 @@ p#contact {
     background: url(../streams/apple.png);
 }
 
+.apple {
+    background: url(../streams/tidal.png);
+}
+
 /*--------------------------------------------------------------------- end streams area ---------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
@@ -571,3 +575,15 @@ ul.contact_link li a p {
 .pt:before {
     background-image: url(https://www.countryflags.io/pt/flat/32.png);
 }
+
+/*----------------------------------------------------------------- concertos fixed image css -----------------------------------------------------------------*/
+
+.concertos-image {
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    width: 20vw;
+    transform: translateY(-5%);
+}
+
+/** end concertos fixed image css **/
