@@ -605,11 +605,17 @@ ul.contact_link li a p {
 
 .concertos-image {
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     right: 0;
     /* Calculate the maximum between 50% of viewport height and 20% of viewport width */
     width: calc(max(var(--height-percentage), var(--width-percentage)));
-    transform: translateY(-5%);
+    transform: translateY(-3%);
 }
+
+.empty-size {
+    /* Calculate the maximum between 50% of viewport height and 20% of viewport width */
+    height: calc((5vh) + max(var(--height-percentage), var(--width-percentage)));
+}
+
 
 /** end concertos fixed image css **/
