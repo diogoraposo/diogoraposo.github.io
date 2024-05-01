@@ -40,6 +40,7 @@ body {
 }
 
 @media screen and (max-width: 778px) {
+
     /* start of medium tablet styles */
     body {
         background: url(../images/foto_sitebrisa_1024x1366.jpg) no-repeat center top fixed;
@@ -71,7 +72,12 @@ a {
     transition: all .3s ease-in-out;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
@@ -106,15 +112,22 @@ h6 {
     font-size: 13px
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -130,7 +143,9 @@ button:focus {
     outline: none;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -149,7 +164,8 @@ a {
     outline: none !important;
 }
 
-a, .btn {
+a,
+.btn {
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -262,7 +278,7 @@ p#contact {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
     .streams-holder {
         padding-left: 10%;
         padding-right: 10%;
@@ -479,12 +495,14 @@ ul.contact_link li a p {
 }
 
 @media screen and (min-width: 3440px) {
+
     /* start of medium tablet styles */
     ul.social_link li a {
         width: 70px;
         height: 70px;
         font-size: 37px;
     }
+
     ul.contact_link li a p {
         font-size: 300%;
     }
@@ -578,11 +596,19 @@ ul.contact_link li a p {
 
 /*----------------------------------------------------------------- concertos fixed image css -----------------------------------------------------------------*/
 
+:root {
+    --height-percentage: 27vh;
+    /* 50% of viewport height */
+    --width-percentage: 22vw;
+    /* 20% of viewport width */
+}
+
 .concertos-image {
     position: fixed;
     bottom: 5%;
     right: 0;
-    width: 20vw;
+    /* Calculate the maximum between 50% of viewport height and 20% of viewport width */
+    width: calc(max(var(--height-percentage), var(--width-percentage)));
     transform: translateY(-5%);
 }
 
