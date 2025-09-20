@@ -31,7 +31,7 @@ body {
 
 @media screen and (min-width: 779px) {
     body {
-        background: url(../images/foto_sitebrisa_3000x1875.jpg) no-repeat left top fixed;
+        background: url(../images/banner.jpg) no-repeat left top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -43,7 +43,7 @@ body {
 
     /* start of medium tablet styles */
     body {
-        background: url(../images/foto_sitebrisa_1024x1366.jpg) no-repeat center top fixed;
+        background: url(../images/banner_tablet.jpg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -53,7 +53,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        background: url(../images/foto_sitebrisa_900x1600.jpg) no-repeat center top fixed;
+        background: url(../images/banner_mobile.jpg) no-repeat center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
