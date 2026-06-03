@@ -2,215 +2,182 @@
 <html lang="en">
 
 <head>
-  <!-- basic -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <!-- site metas -->
-  <title>Brisa | Official site</title>
-  <meta name="keywords"
-    content="brisa musica portuguesa music portuguese portugal nuvem loop outro mar callme naoeemvao">
-  <meta name="description" content="Brisa official site. Find all music of Brisa here. Nuvem OUT NOW! Available in Portuguese and English.">
+  <title>BRISA</title>
+  <meta name="keywords" content="brisa music portuguese singer nuvem loop outromar callme naoeemvao metamorfose casulo">
+  <meta name="description" content="Official site of Brisa. Stream latest music and watch official videos.">
   <meta name="author" content="brisa@musicbybrisa.com">
-  <!-- ogp -->
-  <meta property="og:title" content="Brisa | Official site" />
-  <meta property="og:type" content="music:musician" />
-  <meta property="og:url" content="https://www.musicbybrisa.com" />
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/diogoraposo/diogoraposo.github.io/main/images/foto_about_sitebrisa.jpg" />
-  <!-- favicon -->
-  <link rel="shortcut icon" href="https://musicbybrisa.com/images/favicon.png">
-  <!-- bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- style css -->
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../images/favicon.png">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <!-- Responsive-->
-  <link rel="stylesheet" href="../css/responsive.css">
-  <!-- Tweaks for older IEs-->
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-    media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<!-- body -->
 
-<body >
-  <!-- Javascript files-->
+<body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="../js/brisa.js"></script>
-  <!-- header -->
-  <div class="lang-menu">
-    <div class="selected-lang selected-lang-en" onclick="myLangSelect()">
+  <!-- ROCK-SOLID FIXED BACKGROUND -->
+  <div id="fixed-bg"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="menu-toggle" id="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
     </div>
-    <ul id="lang-select">
-      <li>
-        <a href="https://musicbybrisa.com/index.html" class="pt"></a>
-      </li>
-      <li>
-        <a href="https://musicbybrisa.com/en/index.html" class="en"></a>
-      </li>
-    </ul>
-  </div>
-  <header>
-    <!-- header inner -->
-    <div class="header-top">
-      <div class="header">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 logo align-self-center">
-              <a href="index.html">
-                <p>Brisa</p>
-              </a>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-8 d-md-block align-self-center">
-              <div class="menu-area">
-                <div class="limit-box">
-                  <ul class="social_link">
-                    <li><a href="https://www.instagram.com/callme.brisa" target="_blank"><i class="fab fa-instagram"
-                          aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.youtube.com/brisaofficial" target="_blank"><i class="fab fa-youtube"
-                          aria-hidden="true"></i></a></li>
-                    <li><a href="https://music.apple.com/pt/artist/brisa/1500281026" target="_blank"><i
-                          class="fab fa-apple" aria-hidden="true"></i></a></li>
-                    <li><a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC?si=V_K51N-9TFu_NlkgDl_3aw"
-                        target="_blank"><i class="fab fa-spotify" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/musicbybrisa" target="_blank"><i class="fab fa-facebook"
-                          aria-hidden="true"></i></a></li>
-                    <li><a href="https://e.3cket.com/casulo-concerto-imersivo-de-lancamento-do-ep-brisa" target="_blank"><i class="fas fa-ticket-alt"
-                          aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linktr.ee/callme.brisa" target="_blank"><i class="fab iconify"
-                          data-icon="simple-icons:linktree" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block align-self-center">
-              <ul class="contact_link">
-                <li>
-                  <a href="#footer">
-                    <p id="contact">Contact</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    
+    <div class="nav-container">
+      <div class="nav-spacer"></div>
+
+      <div class="nav-left">
+        <div class="nav-links">
+          <a href="#music">Music</a>
+          <a href="#about">About</a>
+          <a href="#videos">Videos</a>
         </div>
       </div>
-      <!-- end header inner -->
-    </div>
 
-    <!-- end header -->
-    <div class="streams-holder">
-      <div class="row">
-        <div class="iframe-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/UFGYfV-64JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="nav-center">
+        <div class="nav-logo">BRISA</div>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-socials">
+          <a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC" target="_blank"><i class="fab fa-spotify"></i></a>
+          <a href="https://music.apple.com/pt/artist/brisa/1500281026" target="_blank"><i class="fab fa-apple"></i></a>
+          <a href="https://www.youtube.com/brisaofficial" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/callme.brisa" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/musicbybrisa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linktr.ee/callme.brisa" target="_blank">
+            <span class="iconify" data-icon="simple-icons:linktree"></span>
+          </a>
         </div>
       </div>
-      <div class="streams-row">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC?si=V_K51N-9TFu_NlkgDl_3aw" target="_blank">
-              <div class="column spotify">
-                <img src="https://musicbybrisa.com/streams/youtube.png" style="visibility: hidden;" />
-              </div>
-            </a>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <a href="https://music.apple.com/pt/artist/brisa/1500281026" target="_blank">
-              <div class="column apple">
-                <img src="https://musicbybrisa.com/streams/youtube.png" style="visibility: hidden;" />
-              </div>
-            </a>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <a href="https://www.youtube.com/brisaofficial" target="_blank">
-              <div class="column youtube">
-                <img src="https://musicbybrisa.com/streams/youtube.png" style="visibility: hidden;" />
-              </div>
-            </a>
-          </div>
+
+      <div class="nav-lang-container">
+        <div class="lang-toggle">
+          <a href="../index.html">PT</a> | <span class="active">EN</span>
         </div>
       </div>
     </div>
+  </nav>
 
+  <!-- Hero Section (Pure Transparent) -->
+  <header class="hero">
+    <div class="hero-content">
+      <a href="#music" class="hero-release-cover">
+        <img src="../images/deserto.jpeg" alt="Deserto Single Cover">
+      </a>
+      <a href="#music" class="hero-cta-text">Stream Latest Release</a>
+      <h1>BRISA</h1>
+      
+      <div class="hero-newsletter">
+        <p>Join the Journey</p>
+        <form class="newsletter-form" action="https://formspree.io/f/xgobwaop" method="POST">
+          <input type="email" name="email" placeholder="Your Email Address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
   </header>
 
-  <!-- about  -->
-  <div id="about" class="about">
-    <div class="text-background">
-      <div class="container">
-        <div class="row display_boxflex">
-          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-            <div class="about-box">
-              <h2 id="about_title">About Brisa</h2>
-              <div>
-                <p id="about_content">Brisa is a portuguese singer and songwriter known for relatable lyrics that come alive in contagious melodies. The genuine way of spreading her message and the will to break the routine make Brisa sound like a breath of fresh hair, mixed with an adrenaline injection in your day-to-day life. After exploring different sounds, the singer takes us on a trip through the cycle of emotions in her debut EP “CASULO”. The journey begins with “Nuvem”, the first chapter that has been conquering hearts since 2021 and that introduces the topic of anxiety, overthinking and not being able to be in the present moment. The next one is “Férias de Mim” - written by Brisa, Francesco Meoli and Miguel Coimbra (D.A.M.A) and produced by Meoli - that reveals and goes deep into the cause of all this chaos, “a voz que não se cala em mim” (in english: “the voice that never shuts up inside of my head”): our subconscious. There comes the time to be aware of the emotional block and make the decision to go to “Outro Mar” - the third song, released in 2022 - written by Brisa and produced by Meoli. “Contra O Vento” - the fourth song - talks about the moment when one decides to release the need to control, to relax and trust the process. All of these ideas come together in the last song “Metamorfose” - written by Brisa, Gonzalo Tau and ARIEL and produced by ARIEL - that illustrates this cycle using the natural phenomenon as a metaphor.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-            <div class="about-box">
-              <figure><img src="https://musicbybrisa.com/images/foto_about_sitebrisa.jpg" alt="#" /></figure>
-            </div>
-          </div>
+  <!-- Music Section (Blue Overlay) -->
+  <section id="music">
+    <h2 class="section-title">Music</h2>
+    <div class="music-grid">
+      <div class="release-visual">
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/L0NoffPQCzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="release-info">
+        <h2>Deserto</h2>
+        <p>Available on all digital platforms. Experience the journey through chaos and calm with the latest single "Deserto".</p>
+        <div class="stream-links">
+          <a href="https://open.spotify.com/track/1ThO5IUj4X1sbHz8xRZOmk?si=a5f7fcdf5f194489" class="stream-item" target="_blank">
+            <i class="fab fa-spotify"></i> Spotify
+          </a>
+          <a href="https://music.apple.com/ao/song/deserto/1876454280" class="stream-item" target="_blank">
+            <i class="fab fa-apple"></i> Apple Music
+          </a>
+          <a href="https://www.youtube.com/watch?v=L0NoffPQCzc" class="stream-item" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+          <a href="https://tidal.com/track/498052505/u" class="stream-item" target="_blank">
+            <i class="fas fa-music"></i> Tidal
+          </a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end abouts -->
+  </section>
 
-  <div>
-    <div class="container justify-content-center">
-      <div class="row">
+  <!-- About Section (Blue Overlay) -->
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Brisa is a Portuguese singer and songwriter known for writing relatable lyrics that come alive in contagious melodies.</p>
+        <p>She stands out for her ability to convey messages with genuineness and a desire to break the routine, bringing a breath of fresh air mixed with an adrenaline shot to your daily life.</p>
+        <p>In her debut EP “CASULO”, the singer takes us on a journey through the cycle of emotions, from the anxiety of "Nuvem" to the final transformation in "Metamorfose".</p>
+        
+        <p class="links-label">Artist links:</p>
+        <div class="stream-links">
+          <a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC" class="stream-item" target="_blank">
+            <i class="fab fa-spotify"></i> Spotify
+          </a>
+          <a href="https://music.apple.com/pt/artist/brisa/1500281026" class="stream-item" target="_blank">
+            <i class="fab fa-apple"></i> Apple Music
+          </a>
+          <a href="https://www.youtube.com/brisaofficial" class="stream-item" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+          <a href="https://tidal.com/browse/artist/21954852" class="stream-item" target="_blank">
+            <i class="fas fa-music"></i> Tidal
+          </a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="../images/foto_about_sitebrisa.jpg" alt="Brisa Artist Photo">
       </div>
     </div>
-  </div>
+  </section>
 
-  <!--  footer -->
-  <footr>
-    <div class="footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 contact-div">
-            <p class="contact contact-margin">
-              <a href="mailto:brisa@musicbybrisa.com">brisa@musicbybrisa.com</a>
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 ">
-            <ul class="social_link">
-              <li><a href="https://www.youtube.com/brisaofficial" target="_blank"><i class="fab fa-youtube"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://music.apple.com/pt/artist/brisa/1500281026" target="_blank"><i class="fab fa-apple"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC?si=V_K51N-9TFu_NlkgDl_3aw"
-                  target="_blank"><i class="fab fa-spotify" aria-hidden="true"></i></a></li>
-              <li><a href="https://listen.tidal.com/artist/21954852" target="_blank"><i class="fab iconify"
-                    data-icon="simple-icons:tidal" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/callme.brisa" target="_blank"><i class="fab fa-instagram"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://www.facebook.com/musicbybrisa" target="_blank"><i class="fab fa-facebook"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://e.3cket.com/casulo-concerto-imersivo-de-lancamento-do-ep-brisa" target="_blank"><i class="fas fa-ticket-alt"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linktr.ee/callme.brisa" target="_blank"><i class="fab iconify"
-                    data-icon="simple-icons:linktree" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <!-- Videos Section (Blue Overlay) -->
+  <section id="videos">
+    <h2 class="section-title">Videos</h2>
+    <div class="videos-grid">
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/5Nx0X80mhJkA" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/lzjqF6mdTMo" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/UFGYfV-64JM" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/HMykJcCXwcg" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/MY6stwz704U" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/0WYOwLx6WWE" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/3GFbe_VtcFY" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/TEu42VPEso4" frameborder="0" allowfullscreen></iframe></div>
+      <div class="iframe-container"><iframe src="https://www.youtube.com/embed/KGme7L1oYMI" frameborder="0" allowfullscreen></iframe></div>
     </div>
+  </section>
+
+  <!-- Footer (Blue Overlay) -->
+  <footer>
+    <div class="footer-socials">
+      <a href="https://open.spotify.com/artist/0h86oLtyPHlFgPyr7AcAtC" target="_blank"><i class="fab fa-spotify"></i></a>
+      <a href="https://music.apple.com/pt/artist/brisa/1500281026" target="_blank"><i class="fab fa-apple"></i></a>
+      <a href="https://www.youtube.com/brisaofficial" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/callme.brisa" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/musicbybrisa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linktr.ee/callme.brisa" target="_blank">
+        <span class="iconify" data-icon="simple-icons:linktree"></span>
+      </a>
     </div>
-  </footr>
-  <!-- end footer -->
+    <p>&copy; 2026 BRISA. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="../js/brisa.js"></script>
 </body>
 
 </html>
