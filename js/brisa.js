@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mainNav = document.getElementById('main-nav');
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const navLogo = document.querySelector('.nav-logo');
 
     if (mobileMenuBtn && mainNav) {
         mobileMenuBtn.addEventListener('click', function () {
@@ -27,5 +29,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 icon.classList.add('fa-bars');
             });
         });
+    }
+
+    // Shared smooth scroll function
+    function scrollToTop(e) {
+        if (e) e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll to top button functionality
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('is-visible');
+            } else {
+                scrollToTopBtn.classList.remove('is-visible');
+            }
+        });
+
+        // Add smooth scroll listener
+        scrollToTopBtn.addEventListener('click', scrollToTop);
+    }
+
+    // Header logo scroll-to-top functionality
+    if (navLogo) {
+        navLogo.addEventListener('click', scrollToTop);
     }
 });
